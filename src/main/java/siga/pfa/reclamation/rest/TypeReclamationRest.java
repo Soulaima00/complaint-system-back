@@ -16,7 +16,7 @@ import siga.pfa.reclamation.repository.TypeReclamationRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*")
+ @CrossOrigin(origins = "*") 
 public class TypeReclamationRest {
 	
 	

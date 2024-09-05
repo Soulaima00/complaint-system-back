@@ -24,7 +24,7 @@ import siga.pfa.reclamation.service.ReclamationService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*") 
 public class ReclamationRest {
 	private final Logger log = LoggerFactory.getLogger(ReclamationRest.class);
 
@@ -76,7 +76,6 @@ public class ReclamationRest {
         log.debug("REST request to get a page of Reclamation");
 
         return reclamationRepository.findAll();
-    }
-   
+    } 
 
 }

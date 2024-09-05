@@ -23,10 +23,10 @@ public class Reclamation implements Serializable {
     @Column(name = "id")
     private Long id;
     
-    @Column(name = "id_creator")
+     @Column(name = "id_creator")
 
     private Long idCreator;
-
+ 
     @Column(name = "message")
     private String message;
     
@@ -96,14 +96,14 @@ public class Reclamation implements Serializable {
 		this.situation = situation;
 	}
 
-	public Long getIdCreator() {
+ 	public Long getIdCreator() {
 		return idCreator;
 	}
 
 	public void setIdCreator(Long idCreator) {
 		this.idCreator = idCreator;
 	}
-
+ 
 	public SousTypeReclamation getSousTypeReclamation() {
 		return sousTypeReclamation;
 	}

@@ -1,7 +1,7 @@
 package siga.pfa.reclamation.service;
 
 import java.time.LocalDateTime;
-import java.util.List;
+ import java.util.List; 
 
 import javax.transaction.Transactional;
 
@@ -27,7 +27,7 @@ public class ReclamationService  {
         log.debug("Request to save Reclamation : {}", reclamation);
         reclamation.setCreatedDate(LocalDateTime.now());
         reclamation.setSituation(0);
-         return reclamationRepository.save(reclamation);
+          return reclamationRepository.save(reclamation);
     }
 	 // Statistiques par situation
     public List<Object[]> getReclamationsBySituation() {
@@ -50,7 +50,7 @@ public class ReclamationService  {
     public List<Object[]> getSousReclamationsStatistiques() {
         // Exemple de requête pour obtenir les sous-réclamations et leurs occurrences
         return reclamationRepository.findSousReclamationsStatistiques();
-    }
+    } 
 	public Reclamation treat(InputTreatReclamationDTO input) {
 		Reclamation recl =  reclamationRepository.findById(input.getId()).get();
       

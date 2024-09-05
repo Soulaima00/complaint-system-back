@@ -17,7 +17,8 @@ import siga.pfa.reclamation.repository.SousTypeReclamationRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*")
+ @CrossOrigin(origins = "*")
+ 
 public class SousTypeReclamationRest {
 	
 	private final Logger log = LoggerFactory.getLogger(SousTypeReclamationRest.class);
