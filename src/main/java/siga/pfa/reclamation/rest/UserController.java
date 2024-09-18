@@ -39,7 +39,7 @@ public class UserController {
     
 	  @PostMapping("/signup")
 	    public ResponseEntity<?> signUp(@RequestBody User user) {
-	        if (userService.getUserByEmail(user.getEmail())!=null){
+	        if (userService.getUserByEmail(user.getEmail())!=null && userService.getUserByEmail(user.getEmail()).isPresent()){
 	            return ResponseEntity.status(HttpStatus.CONFLICT).body("User already exists");
 	        }
 	        User newUser = userService.saveUser(user);

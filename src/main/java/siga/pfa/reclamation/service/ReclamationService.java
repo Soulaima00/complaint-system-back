@@ -29,6 +29,10 @@ public class ReclamationService  {
         reclamation.setSituation(0);
           return reclamationRepository.save(reclamation);
     }
+
+    public List<Reclamation> getReclamationsByIdCreator(Long idCreator) {
+        return reclamationRepository.findByIdCreator(idCreator);
+    }
 	 // Statistiques par situation
     public List<Object[]> getReclamationsBySituation() {
         return reclamationRepository.countReclamationsBySituation();

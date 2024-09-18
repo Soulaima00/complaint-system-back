@@ -29,5 +29,8 @@ public interface ReclamationRepository extends JpaRepository<Reclamation, Long>{
 
 	    @Query("SELECT sr.sousTypeReclamation.libFr, COUNT(sr) FROM Reclamation sr GROUP BY sr.sousTypeReclamation.libFr")
 	    List<Object[]> findSousReclamationsStatistiques();
+	    
+	    List<Reclamation> findByIdCreator(Long idCreator);
+
  
 }

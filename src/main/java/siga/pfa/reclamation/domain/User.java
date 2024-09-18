@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "users")
+@Table(name = "Pfa_users")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
     @Id

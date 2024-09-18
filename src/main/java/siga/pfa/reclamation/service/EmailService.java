@@ -23,7 +23,7 @@ public class EmailService {
     private UserRepository userRepository;
  
     // Inject the sender email from application.properties
-     private String fromEmail="haythemkk56@gmail.com";
+     private String fromEmail="soulaimasou29@gmail.com";
 
     // Method to generate a random 8-character password
     private String generateRandomPassword() {
@@ -53,7 +53,7 @@ public class EmailService {
         String text = "Hello "+user.get().getFirstName()+" "+user.get().getLastName()+",\n\nYour password has been reset. Here is your new password: " +
                       newPassword + 
                       "\n\nPlease log in and change it as soon as possible.\n\n" +
-                      "Best regards,\nYour Company Name";
+                      "Best regards,\nSIGA";
 
         // Send the email
         SimpleMailMessage message = new SimpleMailMessage();
